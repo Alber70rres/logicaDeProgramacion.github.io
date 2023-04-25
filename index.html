@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="logica de programacion con pseint, variables, funciones, bucles, estructuras.">
+    <title>Logica Programacion</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="icon" href="imgen/soft.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="navegacion">
+      <div class="hamburguer">
+        <svg
+          class="icono"
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+          fill="currentColor"
+          class="bi bi-list"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+          />
+        </svg>
+      </div>
+      <div class="items-enlace">
+        <a class="ini" href="index.html"
+          ><img src="imgen/soft.png" alt="soft"
+        /></a>
+        <a href="#">Ruta</a>
+        <a href="#">Mi blog</a>
+      </div>
+    </nav>
+    <div class="desplegar">
+      <div class="barra">
+        <svg
+          class="cerrar"
+          xmlns="http://www.w3.org/2000/svg"
+          width="40"
+          height="40"
+          fill="currentColor"
+          class="bi bi-x-square"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"
+          />
+          <path
+            d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"
+          />
+        </svg>
+        <div class="subtitle">
+          <h3 class="h3">Contenido</h3>
+          <br /><br />
+          <a href="index.html" class="links">introducción</a>
+          <a href="datos.html" class="links">variables</a>
+          <a href="datos.html" class="links">tipos de datos</a>
+          <a href="condiciones.html" class="links">condiciones</a>
+          <a href="condiciones.html" class="links">bucles</a>
+          <a href="arrefuncions.html" class="links">arreglos</a>
+          <a href="arrefuncions.html" class="links">funciones</a>
+          <a href="excepoo.html" class="links">manejo de excepciones</a>
+          <a href="excepoo.html" class="links">programación OO</a>
+          <a href="ejercicios.html" class="links">Ejercios resueltos</a>
+        </div>
+      </div>
+    </div>
+    <main class="principal">
+      <div class="contenedor">
+        <div class="titulo">
+          <h1>Introducción</h1>
+        </div>
+        <h2>¿qué es la lógica de programación?</h2>
+        <div class="parrafos">
+          <p>
+            La lógica de programación es un conjunto de técnicas y herramientas
+            que se utilizan para diseñar y crear algoritmos que resuelvan
+            problemas computacionales. Su objetivo principal es desarrollar la
+            capacidad de diseñar soluciones de manera estructurada y
+            sistemática, lo que a su vez permite desarrollar programas
+            eficientes, fáciles de mantener y escalables.
+          </p>
+          <p>
+            Otro concepto fundamental es que esta es un conjunto de reglas y
+            principios que se usan para desarrollar algoritmos, es decir,
+            secuencias de instrucciones que permiten resolver un problema o
+            realizar una tarea específica en un programa informático. La lógica
+            de programación es esencial para los desarrolladores de software, ya
+            que les permite generar soluciones informáticas eficientes y
+            efectivas.
+          </p>
+          <h2>Importancia</h2>
+
+          <p>
+            La lógica de programación se basa en la aplicación de la razón y el
+            pensamiento lógico para analizar un problema y diseñar una solución
+            algorítmica. Esto implica comprender la estructura de los datos y
+            las instrucciones, así como la capacidad de ejecutar operaciones
+            matemáticas, comparaciones y operaciones lógicas para crear
+            algoritmos que resuelvan el problema en cuestión.
+          </p>
+
+          <p>
+            La importancia de esta radica en su capacidad para ayudar al
+            desarrollador a crear programas informáticos que sean eficientes,
+            fáciles de entender y mantener, además le permite organizar y
+            estructurar sus ideas, definir los procesos necesarios para alcanzar
+            un objetivo, y crear algoritmos eficientes y escalables. también
+            ayuda a evitar errores comunes como bucles infinitos, condiciones
+            mal definidas y otros problemas que pueden afectar negativamente el
+            funcionamiento del programa. Un buen diseño de algoritmos puede
+            mejorar el rendimiento del programa, reducir los errores y hacer que
+            el código sea más fácil de entender y modificar. Además, la lógica
+            de programación también puede ayudar a los desarrolladores a
+            detectar y corregir errores en el código existente.
+          </p>
+
+          <p>
+            si eres nuevo en la programación es necesario que inicies con este
+            tema y aprendas de una manera sólida los conceptos básicos y tengas
+            un buen pensamiento lógico y critico. En esta web vamos a
+            desarrollar los ejercicios con peseint por lo que si estás
+            interesado puedes continuar en el siguiente botón.
+          </p>
+          <div class="boton">
+            <a class="btn1" href="datos.html">Continuar</a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="pie">
+      <div class="content">
+        <h4 class="h4">
+          si el contenido te fue útil puedes seguirme en mis redes sociales
+        </h4>
+        <nav class="navegacion2">
+          <a href="https://wa.link/4uqptb" target="_blank"
+            ><i class="fuente bi bi-youtube"></i
+          ></a>
+          <a href="https://.com" target="_blank"
+            ><i class="fuente bi bi-instagram"></i
+          ></a>
+          <a href="https://www.facebook.com/rita.gamarra.7731" target="_blank"
+            ><i class="fuente bi bi-facebook"></i
+          ></a>
+          <a href="https://.com" target="_blank"
+            ><i class="fuente bi bi-twitter"></i
+          ></a>
+        </nav>
+        <h4 class="h4">también puedes hacer una criptodonacion en USDT</h4>
+        <div class="h5">kjjsdknflkdjlksjljaiklsjdlkfjklajd</div>
+        <br />
+        <div class="h4">muchas gracias 😊</div>
+        <br />
+        <div class="copiar">
+          <small>&copy; Copyright Alberto Torres 2023</small>
+        </div>
+      </div>
+    </footer>
+    <script src="main.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

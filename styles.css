@@ -1,0 +1,230 @@
+body{
+    font-family: 'Raleway', sans-serif;
+    overflow-y: auto;
+}
+.contenedor{
+  padding-right: calc(1.5rem * 0.5);
+  padding-left: calc(1.5rem * 0.5);
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 2rem;
+}
+.navegacion{
+    background:rgb(39, 39, 39);
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.hamburguer{
+    padding: .5em .5em .5em 1em;
+}
+.principal{
+    padding-top: 2em;
+    overflow-x: hidden;
+}
+
+.icono{
+    background-color: none;
+    cursor: pointer;
+    color: rgb(240, 240, 240);
+}
+.titulo{
+    text-align: center;
+    font-size: .8rem;
+    margin-bottom: 2rem;
+}
+.desplegar{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    transition: left .2s ease;
+    z-index: 100;
+    background: rgba(10, 10, 10, .6);
+}
+.barra{
+    background:rgb(10, 10, 10);
+    width: 60%;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.cerrar{
+    color: rgb(240, 240, 240);
+    cursor: pointer;
+    position: absolute;
+    left:61%;
+    top: .4em;
+    background-color: rgb(39, 39, 39);
+}
+.aparecer{
+    left: 0;
+}
+.parrafos{
+    font-size: 1.1rem;
+}
+.items-enlace{
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-left: .5em;
+   padding: .5rem 0;
+}
+.items-enlace a{
+    text-decoration: none;
+    color: rgb(240, 240, 240);
+    font-weight: 600;
+    font-size: .9rem;
+    margin-right: 2rem;
+}
+.ini img{
+    display: none;
+    height: 2.9rem;
+    width: 2.9rem;
+    border-radius: 50%;
+}
+.subtitle{
+    color: rgb(240, 240, 240);
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 1.9rem;
+    font-weight: 800;
+}
+.subtitle a{
+    margin-bottom: 1.6rem;
+    text-decoration: none;
+    padding-top: .7rem;
+    padding-bottom: .7rem;
+    color: rgb(240, 240, 240);
+    font-weight: 600;
+    transition: all .2s ease;
+}
+.subtitle a:focus{
+    color: #ffa500;
+}
+.subtitle a:hover{
+    background-color: rgb(39, 39, 39);
+    color: #ffa500;
+}
+
+.pie{
+    background:rgb(39, 39, 39);
+    color: rgb(250, 250, 250);
+}
+.copiar{
+    text-align: center;
+}
+.h4{
+    text-align: center;
+}
+.h5{
+    text-align: center;
+    padding-bottom: 10px;
+    color: #ffa500;
+    font-weight: 600;
+}
+.content{
+    padding-top: 0.1rem;
+    padding-bottom: 1rem;
+}
+.navegacion2{
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+.navegacion2 a{
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+.boton{
+    display: flex;
+    justify-content: end;
+    margin: 2rem .7rem 2rem 0;
+}
+.btn1{
+    background: rgb(0, 128, 0);
+    border-radius: 7px;
+    padding: .8rem .5rem;
+    width: auto;
+    border: none;
+    cursor: pointer;
+    color: rgb(240, 240, 240);
+    font-size: 1rem;
+    font-weight: 600;
+    margin-right: 1rem;
+    text-decoration: none;
+}
+.codigo{
+    padding: 2rem;
+    background: #343d4d;
+    color: rgb(240, 240, 240);
+    overflow-x: auto;
+    width: 60%;
+    border-radius: 10px;
+}
+.blanco{
+    white-space: pre!important;
+}
+#btn2{
+   margin-right: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .icono{
+        display: none;
+    }
+    body{
+        overflow-y: scroll !important;
+    }
+    .desplegar{
+        left: 0;
+        width: 16%;
+    }
+    .barra{
+        width: 100%;
+        background: rgb(40, 40, 40);
+    }
+    .subtitle a:hover{
+        background: rgb(10, 10, 10);
+    }
+    .cerrar{
+        display: none;
+    }
+    .principal{
+        margin-left: 17%;
+    }
+    .navegacion{
+        margin-left: 16%;
+    }
+    .pie{
+        margin-left: 16%;
+    }
+    .items-enlace a{ 
+        margin-right: 5rem;
+    }
+    .items-enlace a:hover{ 
+       color: #ffa500;
+    }
+    .subtitle{
+        padding-top: 3rem;
+    }
+    .h3{
+        font-size: 1.2em;
+    }
+ }
+ @media (min-width: 500px) {
+    .ini img{
+        display: block;
+    }
+    .items-enlace a{
+        margin-left: 2rem;
+    }
+    .titulo{
+        font-size: 1rem;
+    }
+ }

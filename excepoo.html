@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="logica de programacion con pseint, variables, funciones, bucles, estructuras.">
+    <title>Logica Programacion</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="icon" href="imgen/soft.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="navegacion">
+      <div class="hamburguer">
+        <svg
+          class="icono"
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+          fill="currentColor"
+          class="bi bi-list"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+          />
+        </svg>
+      </div>
+      <div class="items-enlace">
+        <a class="ini" href="index.html"
+          ><img src="imgen/soft.png" alt="soft"
+        /></a>
+        <a href="#">Ruta</a>
+        <a href="#">Mi blog</a>
+      </div>
+    </nav>
+    <div class="desplegar">
+      <div class="barra">
+        <svg
+          class="cerrar"
+          xmlns="http://www.w3.org/2000/svg"
+          width="40"
+          height="40"
+          fill="currentColor"
+          class="bi bi-x-square"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"
+          />
+          <path
+            d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"
+          />
+        </svg>
+        <div class="subtitle">
+          <h3 class="h3">Contenido</h3>
+          <br /><br />
+          <a href="index.html" class="links">introducción</a>
+          <a href="datos.html" class="links">variables</a>
+          <a href="datos.html" class="links">tipos de datos</a>
+          <a href="condiciones.html" class="links">condiciones</a>
+          <a href="condiciones.html" class="links">bucles</a>
+          <a href="arrefuncions.html" class="links">arreglos</a>
+          <a href="arrefuncions.html" class="links">funciones</a>
+          <a href="excepoo.html" class="links">manejo de excepciones</a>
+          <a href="excepoo.html" class="links">programación OO</a>
+          <a href="ejercicios.html" class="links">Ejercios resueltos</a>
+        </div>
+      </div>
+    </div>
+    <main class="principal">
+      <div class="contenedor">
+        <div class="titulo">
+          <h1>manejo de excepciones</h1>
+        </div>
+        <div class="parrafos">
+          <p>
+            El manejo de excepciones es una técnica utilizada en programación
+            para prevenir que una aplicación se bloquee o cierre abruptamente
+            ante situaciones imprevistas o errores en el código. En Pseint,
+            podemos utilizar la instrucción "capturar" para manejar excepciones
+            y ejecutar un código alternativo cuando ocurre un error. También
+            podemos especificar el tipo de excepción a capturar, como errores de
+            división por cero o de índice fuera de rango. Veamos un ejemplo
+            practico.
+          </p>
+          <div class="codigo">
+            <code class="blanco"
+              >proceso division <br />definir numerador, denominador, resultado como real 
+              <br />escribir "Ingrese el numerador: "<br />leer numerador
+              <br />escribir "Ingrese el denominador: "<br />leer denominador
+              <br />capturar error hacer<br />escribir "Error: No se puede dividir por cero." 
+              <br />fincapturar 
+              <br />resultado <- numerador / denominador
+               <br />escribir "El resultado de la división es: ", resultado <br />finproceso</code
+            >
+          </div>
+           <p>En este ejemplo, si el usuario ingresa un valor de cero como denominador, se capturará el error y se mostrará un mensaje de error en su lugar. Si el denominador es diferente 
+            de cero, se calculará el resultado normalmente.</p>
+            <p>El manejo de excepciones es una herramienta esencial en programación para garantizar la estabilidad y la fiabilidad de nuestras aplicaciones. En Pseint, podemos utilizar la instrucción "capturar" para manejar excepciones y asegurarnos de que nuestro código no se bloquee 
+              o cierre abruptamente ante situaciones imprevistas.
+            </p>
+              <div class="titulo">
+                <h2>programación orientada a objetos</h2>
+              </div>
+            <p>La programación orientada a objetos es un paradigma de programación que se enfoca en la creación de objetos que interactúan entre sí para resolver un problema. En este paradigma, se utilizan clases 
+              y objetos para representar entidades del mundo real y su comportamiento.
+            </p>
+            <p>Una clase es un modelo o plantilla que define las características y el comportamiento de un conjunto de objetos. Un objeto es una instancia o variable que representa una entidad específica de la clase. Los objetos tienen atributos, que son las características
+               o propiedades que los definen, y métodos, que son las acciones que pueden realizar.
+            </p>
+            <p>En PseInt, se pueden crear clases y objetos utilizando la sintaxis de programación orientada a objetos. Por ejemplo, para crear una clase "Persona" con atributos "nombre" y "edad", se puede utilizar el siguiente código:</p>
+            <div class="codigo">
+              <code class="blanco">Clase Persona
+                <br />  Definir nombre Como Caracter<br />  Definir edad Como Entero<br />Fin Clase
+          </code>
+            </div>
+            <p>Luego, para crear un objeto de la clase "Persona" se puede hacer lo siguiente:</p>
+            <div class="codigo">
+              <code class="blanco">Definir persona1 Como Persona
+                <br /> persona1.nombre <- "Juan"<br /> persona.edad <- 30
+              </code>
+          </div>
+          <p>En este ejemplo, se crea un objeto llamado "persona" de la clase "Persona" y se le asignan valores a sus atributos "nombre" y "edad".</p>
+          <p>Los métodos son las acciones que pueden realizar los objetos. Por ejemplo, en la clase "Persona", se podría crear un método para imprimir los datos de la persona:</p>
+          <div class="codigo">
+            <code class="blanco">Clase Persona
+              Definir nombre Como Caracter
+              Definir edad Como Entero
+          
+              Metodo ImprimirDatos()
+                  Escribir "Nombre: ", nombre
+                  Escribir "Edad: ", edad
+              Fin Metodo
+          Fin Clase
+            </code>
+        </div>
+          <p>Luego, para llamar al método "ImprimirDatos" del objeto "persona", se puede hacer lo siguiente:</p>
+          <div class="codigo">
+            <code class="blanco">persona1.ImprimirDatos()
+            </code>
+          </div>
+          <p>la programación orientada a objetos es una forma de abordar la programación que se enfoca en la creación de objetos que interactúan entre sí para resolver un problema. En PseInt, se pueden crear clases y objetos utilizando la sintaxis de programación orientada a objetos, y se pueden definir atributos y métodos para los objetos.</p>
+          <div class="boton">
+            <a class="btn1" href="arrefuncions.html" id="btn2">atras</a>
+            <a class="btn1" href="ejercicios.html">Continuar</a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="pie">
+      <div class="content">
+        <h4 class="h4">
+          si el contenido te fue útil puedes seguirme en mis redes sociales
+        </h4>
+        <nav class="navegacion2">
+          <a href="https://wa.link/4uqptb" target="_blank"
+            ><i class="fuente bi bi-youtube"></i
+          ></a>
+          <a href="https://.com" target="_blank"
+            ><i class="fuente bi bi-instagram"></i
+          ></a>
+          <a href="https://www.facebook.com/rita.gamarra.7731" target="_blank"
+            ><i class="fuente bi bi-facebook"></i
+          ></a>
+          <a href="https://.com" target="_blank"
+            ><i class="fuente bi bi-twitter"></i
+          ></a>
+        </nav>
+        <h4 class="h4">también puedes hacer una criptodonacion en USDT</h4>
+        <div class="h5">kjjsdknflkdjlksjljaiklsjdlkfjklajd</div>
+        <br />
+        <div class="h4">muchas gracias 😊</div>
+        <br />
+        <div class="copiar">
+          <small>&copy; Copyright Alberto Torres 2023</small>
+        </div>
+      </div>
+    </footer>
+    <script src="main.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

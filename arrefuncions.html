@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="logica de programacion con pseint, variables, funciones, bucles, estructuras.">
+    <title>Logica Programacion</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="icon" href="imgen/soft.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="navegacion">
+      <div class="hamburguer">
+        <svg
+          class="icono"
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+          fill="currentColor"
+          class="bi bi-list"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+          />
+        </svg>
+      </div>
+      <div class="items-enlace">
+        <a class="ini" href="index.html"
+          ><img src="imgen/soft.png" alt="soft"
+        /></a>
+        <a href="#">Ruta</a>
+        <a href="#">Mi blog</a>
+      </div>
+    </nav>
+    <div class="desplegar">
+      <div class="barra">
+        <svg
+          class="cerrar"
+          xmlns="http://www.w3.org/2000/svg"
+          width="40"
+          height="40"
+          fill="currentColor"
+          class="bi bi-x-square"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"
+          />
+          <path
+            d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"
+          />
+        </svg>
+        <div class="subtitle">
+          <h3 class="h3">Contenido</h3>
+          <br /><br />
+          <a href="index.html" class="links">introducción</a>
+          <a href="datos.html" class="links">variables</a>
+          <a href="datos.html" class="links">tipos de datos</a>
+          <a href="condiciones.html" class="links">condiciones</a>
+          <a href="condiciones.html" class="links">bucles</a>
+          <a href="arrefuncions.html" class="links">arreglos</a>
+          <a href="arrefuncions.html" class="links">funciones</a>
+          <a href="excepoo.html" class="links">manejo de excepciones</a>
+          <a href="excepoo.html" class="links">programación OO</a>
+          <a href="ejercicios.html" class="links">Ejercios resueltos</a>
+        </div>
+      </div>
+    </div>
+    <main class="principal">
+      <div class="contenedor">
+        <div class="titulo">
+          <h1>Arreglos</h1>
+        </div>
+        <div class="parrafos">
+          <p>
+            Los arreglos en programación son una estructura de datos que permite
+            almacenar una cantidad fija de elementos del mismo tipo en una sola
+            variable. Los arreglos son muy útiles cuando se necesita manejar
+            grandes cantidades de datos.
+          </p>
+
+          <p>
+            En Pseint, los arreglos se declaran especificando su tipo de dato,
+            nombre y tamaño. Para acceder a los elementos del arreglo, se
+            utiliza un índice que indica la posición del elemento que se quiere
+            acceder. Un ejemplo práctico de uso de arreglos en Pseint sería el
+            almacenamiento de calificaciones de estudiantes en un examen. En
+            este caso, se podría declarar un arreglo de tipo numérico con el
+            tamaño correspondiente al número de estudiantes, y luego ir
+            asignando las calificaciones correspondientes a cada posición del
+            arreglo. Aqui te dejo un ejemplo diferente para que analizes
+          </p>
+          <div class="codigo">
+            <code class="blanco"
+              >Algoritmo ejemplo_arreglos <br />Dimension arreglo[5] Como Entero
+              <br />Para i = 1 Hasta 5 Con Paso 1 Hacer <br />
+              arreglo[i] = i <br />FinPara <br />Para i = 1 Hasta 5 Con Paso 1
+              Hacer <br />Escribir("El valor del elemento " i " es: ",
+              arreglo[i]) <br />FinPara <br />FinAlgoritmo</code
+            >
+          </div>
+          <p>
+            En este ejemplo, se declara un arreglo llamado ejemplo-arreglos que
+            contiene 5 elementos de tipo entero. Luego, se utiliza un bucle Para
+            para asignar valores a cada uno de los elementos del arreglo, que
+            van desde 1 hasta 5. Finalmente, se muestra en pantalla el valor de
+            cada elemento del arreglo mediante otro bucle Para. Los arreglos son
+            una herramienta poderosa en programación que permite manejar grandes
+            cantidades de datos de manera eficiente.
+          </p>
+          <div class="titulo"><h2>funciones o sobprocesos</h2></div>
+          <p>
+            Las funciones o subprocesos son una herramienta clave muy importante
+            en la programación ya que permiten reutilizar código y hacer que los
+            programas sean más modulares y fáciles de entender y mantener. En
+            PSeInt, al igual que en otros lenguajes de programación, las
+            funciones se definen mediante la palabra clave "Funcion" seguida del
+            nombre de la función y los parámetros que recibe entre paréntesis.
+          </p>
+          <p>
+            A continuación se muestra un ejemplo de función en PSeInt que recibe
+            dos números como parámetros y devuelve el resultado de la suma:
+          </p>
+          <div class="codigo">
+            <code class="blanco"
+              >Proceso EjemploFuncion Funcion Sumar(num1: Entero, num2: Entero) -> Entero <br>Definir resultado como Entero resultado <- num1 + num2
+              <br />Devolver resultado FinFuncion <br />Definir x, y, z como Entero x <- 3 y <- 5 z <- Sumar(x, y)
+              <br /> Escribir "La suma de ", x, " y ", y, " es ", z <br> FinProceso</code
+            >
+          </div>
+          <p>En este ejemplo, la función Sumar recibe dos parámetros de tipo Entero y devuelve otro
+             valor de tipo Entero que es el resultado de sumar los dos números. Luego, en el programa 
+             principal se definen las variables x, y y z como enteros y se les asignan los valores 3 y 5 respectivamente. Finalmente, se llama a la función Sumar pasando 
+            como parámetros los valores de x e y y se asigna el resultado a la variable z.
+          </p>
+          <p>Al ejecutar este programa se mostrará en pantalla el mensaje "La suma de 3 y 5 es 8", ya que la función Sumar devuelve el valor 8 al sumar 3 y 5.</p>
+          <div class="boton">
+            <a class="btn1" href="condiciones.html" id="btn2">atras</a>
+            <a class="btn1" href="excepoo.html">Continuar</a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="pie">
+      <div class="content">
+        <h4 class="h4">
+          si el contenido te fue útil puedes seguirme en mis redes sociales
+        </h4>
+        <nav class="navegacion2">
+          <a href="https://wa.link/4uqptb" target="_blank"
+            ><i class="fuente bi bi-youtube"></i
+          ></a>
+          <a href="https://.com" target="_blank"
+            ><i class="fuente bi bi-instagram"></i
+          ></a>
+          <a href="https://www.facebook.com/rita.gamarra.7731" target="_blank"
+            ><i class="fuente bi bi-facebook"></i
+          ></a>
+          <a href="https://.com" target="_blank"
+            ><i class="fuente bi bi-twitter"></i
+          ></a>
+        </nav>
+        <h4 class="h4">también puedes hacer una criptodonacion en USDT</h4>
+        <div class="h5">kjjsdknflkdjlksjljaiklsjdlkfjklajd</div>
+        <br />
+        <div class="h4">muchas gracias 😊</div>
+        <br />
+        <div class="copiar">
+          <small>&copy; Copyright Alberto Torres 2023</small>
+        </div>
+      </div>
+    </footer>
+    <script src="main.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
