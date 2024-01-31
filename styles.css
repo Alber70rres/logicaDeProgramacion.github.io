@@ -131,11 +131,11 @@ a{
 .navegacion2 {
   display: flex;
   justify-content: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 .navegacion2 a {
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 .boton {
   display: flex;
@@ -174,11 +174,20 @@ a{
   margin-right: 1.5rem;
 }
 
-.subtitle a:hover {
+.subtitle a:hover{
+  background-color: rgb(90, 90, 90);
+  color: #ffa500;
+}
+
+a.links.active {
   background-color: rgb(39, 39, 39);
   color: #ffa500;
 }
 
+.introducir{
+  color: #ffa500 !important; 
+  background-color: rgb(39, 39, 39);
+}
 
 @media (min-width: 900px) {
   .icono {
@@ -236,11 +245,28 @@ a{
 @media (min-width: 500px) {
   .ini img {
     display: block;
+    
   }
+
+  img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+
   .items-enlace a {
     margin-left: 2rem;
   }
   .titulo {
     font-size: 1rem;
+  }
+
+  .navegacion2 {
+    font-size: 2rem;
+  }
+  .navegacion2 a {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
   }
 }

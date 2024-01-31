@@ -1,4 +1,3 @@
-"use strict";
 const aparecer = document.querySelector(".desplegar");
 const abrir = document.querySelector(".icono");
 abrir.addEventListener("click",()=>{
