@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="logica de programacion con pseint, variables, funciones, bucles, estructuras.">
+    <meta
+      name="description"
+      content="logica de programacion con pseint, variables, funciones, bucles, estructuras."
+    />
     <title>Logica Programacion</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
@@ -70,16 +73,16 @@
         <div class="subtitle">
           <h3 class="h3">Contenido</h3>
           <br /><br />
-          <a href="index.html" class="links enlaceCambio" onclick="cambiarColor(this); return false;">introducción</a>
-          <a href="datos.html" class="links enlaceCambio"  onclick="cambiarColor(this); return false;">variables</a>
-          <a href="datos.html" class="links enlaceCambio"  onclick="cambiarColor(this); return false;">tipos de datos</a>
-          <a href="condiciones.html" class="links enlaceCambio"  onclick="cambiarColor(this); return false;">condiciones</a>
-          <a href="condiciones.html" class="links enlaceCambio" onclick="cambiarColor(this); return false;">bucles</a>
-          <a href="arrefuncions.html" class="links enlaceCambio"  onclick="cambiarColor(this); return false;">arreglos</a>
-          <a href="arrefuncions.html" class="links enlaceCambio"  onclick="cambiarColor(this); return false;">funciones</a>
-          <a href="excepoo.html" class="links enlaceCambio"  onclick="cambiarColor(this); return false;">manejo de excepciones</a>
-          <a href="excepoo.html" class="links enlaceCambio"  onclick="cambiarColor(this); return false;">programación OO</a>
-          <a href="ejercicios.html" class="links enlaceCambio" onclick="cambiarColor(this); return false;">Ejercios resueltos</a>
+          <a href="index.html">introducción</a>
+          <a href="datos.html" class="color">variables</a>
+          <a href="datos.html#tiposDatos" class="color">tipos de datos</a>
+          <a href="condiciones.html">condiciones</a>
+          <a href="condiciones.html#bucles">bucles</a>
+          <a href="arrefuncions.html">arreglos</a>
+          <a href="arrefuncions.html#funciones">funciones</a>
+          <a href="excepoo.html">manejo de excepciones</a>
+          <a href="excepoo.html#objetos">programación OO</a>
+          <a href="ejercicios.html">Ejercios resueltos</a>
         </div>
       </div>
     </div>
@@ -105,16 +108,22 @@
             entero, se puede utilizar la siguiente línea de código:
           </p>
           <div class="codigo">
-            <code class="blanco">definir edad como entero </code>
+            <button class="copiarContenido" data-target="codigo1">
+              <img src="imgen/copiar.png" class="imagenCopiar" alt="copiar"/>
+            </button>
+            <code class="blanco" id="codigo1">definir edad como entero </code>
           </div>
           <p>
             Existen diferentes tipos de datos en PSeInt, incluyendo enteros,
-            reales, caracteres, boleanos y cadenas de texto. Por ejemplo, para declarar
-            una variable llamada "nombre" que almacena una cadena de texto, se
-            puede utilizar la siguiente línea de código:
+            reales, caracteres, boleanos y cadenas de texto. Por ejemplo, para
+            declarar una variable llamada "nombre" que almacena una cadena de
+            texto, se puede utilizar la siguiente línea de código:
           </p>
           <div class="codigo">
-            <code class="blanco">definir edad como texto </code>
+            <button class="copiarContenido" data-target="codigo2">
+              <img src="imgen/copiar.png" class="imagenCopiar" alt="copiar"/>
+            </button>
+            <code class="blanco" id="codigo2">definir edad como texto </code>
           </div>
           <p>
             Una vez que se han declarado las variables, se pueden asignar
@@ -122,7 +131,10 @@
             muestra en el siguiente ejemplo:
           </p>
           <div class="codigo">
-            <code class="blanco">edad = 25 <br />nombre = "Juan" </code>
+            <button class="copiarContenido" data-target="codigo3">
+              <img src="imgen/copiar.png" class="imagenCopiar" alt="copiar"/>
+            </button>
+            <code class="blanco" id="codigo3">edad = 25 <br />nombre = "Juan" </code>
           </div>
           <p>
             Además de los tipos de datos básicos, los programas también pueden
@@ -135,26 +147,38 @@
             podría ser el siguiente programa que solicita al usuario su nombre y
             edad, y luego muestra un mensaje personalizado de bienvenida:
           </p>
-          <div class="codigo">
-            <code class="blanco"
-              >Algoritmo EjemploVariables <br />definir nombre como texto
-              <br />definir edad como entero<br />escribir "Ingrese su nombre:
-              "<br />leer nombre<br />escribir "Ingrese su edad: "<br />leer edad
-              <br />escribir "Bienvenido/a " + nombre + "!"<br />escribir "Tu edad es " + edad
-              <br />FinAlgoritmo</code
-            >
+          <div id="general">
+            <div class="codigo">
+              <button class="copiarContenido" data-target="codigo4">
+                <img src="imgen/copiar.png" alt="copiar" id="imagenCopiar" />
+              </button>
+              <code class="blanco" id="codigo4">
+                Algoritmo EjemploVariables <br />
+                definir nombre como texto <br />
+                definir edad como entero <br />
+                escribir "Ingrese su nombre: " <br />
+                leer nombre <br />
+                escribir "Ingrese su edad: " <br />
+                leer edad <br />
+                escribir "Bienvenido/a " + nombre + "!" <br />
+                escribir "Tu edad es " + edad <br />
+                FinAlgoritmo
+              </code>
+            </div>
+
+            <p>
+              En este ejemplo, se utilizan variables de tipo "texto" y "entero"
+              para almacenar el nombre y la edad del usuario, respectivamente.
+              Luego, se utilizan las operaciones de concatenación de texto "+"
+              para crear un mensaje personalizado de bienvenida que incluye el
+              nombre y la edad del usuario.
+            </p>
+
+            <div class="boton">
+              <a class="btn1 links" href="index.html" id="btn2">atras</a>
+              <a class="btn1 links dos" href="condiciones.html">Continuar</a>
+            </div>
           </div>
-        </div>
-        <p>
-          En este ejemplo, se utilizan variables de tipo "texto" y "entero" para
-          almacenar el nombre y la edad del usuario, respectivamente. Luego, se
-          utilizan las operaciones de concatenación de texto "+" para crear un
-          mensaje personalizado de bienvenida que incluye el nombre y la edad
-          del usuario.
-        </p>
-        <div class="boton">
-          <a class="btn1 links" href="index.html" id="btn2">atras</a>
-          <a class="btn1 links dos" href="condiciones.html">Continuar</a>
         </div>
       </div>
     </main>
@@ -163,13 +187,17 @@
         <h3 class="h4">Buscame en mis redes sociales</h3>
         <br />
         <nav class="navegacion2">
-          <a href="https://www.youtube.com/channel/UCLfXqp_un5veLmhMk4MN0BA" target="_blank"
+          <a
+            href="https://www.youtube.com/channel/UCLfXqp_un5veLmhMk4MN0BA"
+            target="_blank"
             ><i class="fuente bi bi-youtube"></i
           ></a>
           <a href="https://www.instagram.com/alber70rres/" target="_blank"
             ><i class="fuente bi bi-instagram"></i
           ></a>
-          <a href="https://www.facebook.com/profile.php?id=61555589141489" target="_blank"
+          <a
+            href="https://www.facebook.com/profile.php?id=61555589141489"
+            target="_blank"
             ><i class="fuente bi bi-facebook"></i
           ></a>
           <a href="https://twitter.com/Alber70rres" target="_blank">
@@ -178,11 +206,11 @@
           <a href="https://github.com/Alber70rres" target="_blank">
             <i class="fuente bi bi-github"></i>
           </a>
-          <a href="https://www.linkedin.com/in/alberto-torres-882438298/" target="_blank">
-            <i
-              class="fa fa-linkedin-square"
-              
-            ></i>
+          <a
+            href="https://www.linkedin.com/in/alberto-torres-882438298/"
+            target="_blank"
+          >
+            <i class="fa fa-linkedin-square"></i>
           </a>
         </nav>
         <br />
@@ -200,6 +228,6 @@
     </footer>
     <script src="main.js"></script>
     <script src="colorEnlace.js"></script>
-    <script src="botonClickColor.js"></script>
+    <script src="copiarPegar.js"></script>
   </body>
 </html>

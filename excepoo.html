@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="logica de programacion con pseint, variables, funciones, bucles, estructuras.">
+    <meta
+      name="description"
+      content="logica de programacion con pseint, variables, funciones, bucles, estructuras."
+    />
     <title>Logica Programacion</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
@@ -42,7 +45,7 @@
       </div>
       <div class="items-enlace">
         <a class="ini" href="index.html"
-          ><img src="imgen/logo.svg" alt="soft"
+          ><img src="imgen/logo.svg" alt="desarrollador"
         /></a>
         <a href="#">Inicio</a>
         <a href="#">Portfolio</a>
@@ -70,16 +73,16 @@
         <div class="subtitle">
           <h3 class="h3">Contenido</h3>
           <br /><br />
-          <a href="index.html" class="links enlaceCambio" onclick="cambiarColor(this); return false;">introducción</a>
-          <a href="datos.html" class="links enlaceCambio"  onclick="cambiarColor(this); return false;">variables</a>
-          <a href="datos.html" class="links enlaceCambio"  onclick="cambiarColor(this); return false;">tipos de datos</a>
-          <a href="condiciones.html" class="links enlaceCambio"  onclick="cambiarColor(this); return false;">condiciones</a>
-          <a href="condiciones.html" class="links enlaceCambio" onclick="cambiarColor(this); return false;">bucles</a>
-          <a href="arrefuncions.html" class="links enlaceCambio"  onclick="cambiarColor(this); return false;">arreglos</a>
-          <a href="arrefuncions.html" class="links enlaceCambio"  onclick="cambiarColor(this); return false;">funciones</a>
-          <a href="excepoo.html" class="links enlaceCambio"  onclick="cambiarColor(this); return false;">manejo de excepciones</a>
-          <a href="excepoo.html" class="links enlaceCambio"  onclick="cambiarColor(this); return false;">programación OO</a>
-          <a href="ejercicios.html" class="links enlaceCambio" onclick="cambiarColor(this); return false;">Ejercios resueltos</a>
+          <a href="index.html">introducción</a>
+          <a href="datos.html">variables</a>
+          <a href="datos.html#tiposDatos">tipos de datos</a>
+          <a href="condiciones.html">condiciones</a>
+          <a href="condiciones.html#bucles">bucles</a>
+          <a href="arrefuncions.html">arreglos</a>
+          <a href="arrefuncions.html#funciones">funciones</a>
+          <a href="excepoo.html" class="color">manejo de excepciones</a>
+          <a href="excepoo.html#objetos" class="color">programación OO</a>
+          <a href="ejercicios.html">Ejercios resueltos</a>
         </div>
       </div>
     </div>
@@ -100,65 +103,123 @@
             practico.
           </p>
           <div class="codigo">
-            <code class="blanco"
-              >proceso division <br />definir numerador, denominador, resultado como real 
-              <br />escribir "Ingrese el numerador: "<br />leer numerador
-              <br />escribir "Ingrese el denominador: "<br />leer denominador
-              <br />capturar error hacer<br />escribir "Error: No se puede dividir por cero." 
-              <br />fincapturar 
-              <br />resultado <- numerador / denominador
-               <br />escribir "El resultado de la división es: ", resultado <br />finproceso</code
+            <button class="copiarContenido" data-target="codigo11">
+              <img src="imgen/copiar.png" alt="copiar" id="imagenCopiar" />
+            </button>
+            <code class="blanco" id="codigo11"
+              >proceso division <br />definir numerador, denominador, resultado
+              como real <br />escribir "Ingrese el numerador: "<br />leer
+              numerador <br />escribir "Ingrese el denominador: "<br />leer
+              denominador <br />capturar error hacer<br />escribir "Error: No se
+              puede dividir por cero." <br />fincapturar <br />resultado <-
+              numerador / denominador <br />escribir "El resultado de la
+              división es: ", resultado <br />finproceso</code
             >
           </div>
-           <p>En este ejemplo, si el usuario ingresa un valor de cero como denominador, se capturará el error y se mostrará un mensaje de error en su lugar. Si el denominador es diferente 
-            de cero, se calculará el resultado normalmente.</p>
-            <p>El manejo de excepciones es una herramienta esencial en programación para garantizar la estabilidad y la fiabilidad de nuestras aplicaciones. En Pseint, podemos utilizar la instrucción "capturar" para manejar excepciones y asegurarnos de que nuestro código no se bloquee 
-              o cierre abruptamente ante situaciones imprevistas.
-            </p>
-              <div class="titulo">
-                <h2>programación orientada a objetos</h2>
-              </div>
-            <p>La programación orientada a objetos es un paradigma de programación que se enfoca en la creación de objetos que interactúan entre sí para resolver un problema. En este paradigma, se utilizan clases 
-              y objetos para representar entidades del mundo real y su comportamiento.
-            </p>
-            <p>Una clase es un modelo o plantilla que define las características y el comportamiento de un conjunto de objetos. Un objeto es una instancia o variable que representa una entidad específica de la clase. Los objetos tienen atributos, que son las características
-               o propiedades que los definen, y métodos, que son las acciones que pueden realizar.
-            </p>
-            <p>En PseInt, se pueden crear clases y objetos utilizando la sintaxis de programación orientada a objetos. Por ejemplo, para crear una clase "Persona" con atributos "nombre" y "edad", se puede utilizar el siguiente código:</p>
+          <p>
+            En este ejemplo, si el usuario ingresa un valor de cero como
+            denominador, se capturará el error y se mostrará un mensaje de error
+            en su lugar. Si el denominador es diferente de cero, se calculará el
+            resultado normalmente.
+          </p>
+          <p id="objetos">
+            El manejo de excepciones es una herramienta esencial en programación
+            para garantizar la estabilidad y la fiabilidad de nuestras
+            aplicaciones. En Pseint, podemos utilizar la instrucción "capturar"
+            para manejar excepciones y asegurarnos de que nuestro código no se
+            bloquee o cierre abruptamente ante situaciones imprevistas.
+          </p>
+          <div class="titulo">
+            <h2>programación orientada a objetos</h2>
+          </div>
+          <p>
+            La programación orientada a objetos es un paradigma de programación
+            que se enfoca en la creación de objetos que interactúan entre sí
+            para resolver un problema. En este paradigma, se utilizan clases y
+            objetos para representar entidades del mundo real y su
+            comportamiento.
+          </p>
+          <p>
+            Una clase es un modelo o plantilla que define las características y
+            el comportamiento de un conjunto de objetos. Un objeto es una
+            instancia o variable que representa una entidad específica de la
+            clase. Los objetos tienen atributos, que son las características o
+            propiedades que los definen, y métodos, que son las acciones que
+            pueden realizar.
+          </p>
+          <p>
+            En PseInt, se pueden crear clases y objetos utilizando la sintaxis
+            de programación orientada a objetos. Por ejemplo, para crear una
+            clase "Persona" con atributos "nombre" y "edad", se puede utilizar
+            el siguiente código:
+          </p>
+          <div class="codigo">
+            <button class="copiarContenido" data-target="codigo12">
+              <img src="imgen/copiar.png" alt="copiar" id="imagenCopiar" />
+            </button>
+            <code class="blanco" id="codigo12"
+              >Clase Persona <br />
+              Definir nombre Como Caracter<br />
+              Definir edad Como Entero<br />Fin Clase
+            </code>
+          </div>
+          <p>
+            Luego, para crear un objeto de la clase "Persona" se puede hacer lo
+            siguiente:
+          </p>
+          <div id="general">
             <div class="codigo">
-              <code class="blanco">Clase Persona
-                <br />  Definir nombre Como Caracter<br />  Definir edad Como Entero<br />Fin Clase
-          </code>
-            </div>
-            <p>Luego, para crear un objeto de la clase "Persona" se puede hacer lo siguiente:</p>
-            <div class="codigo">
-              <code class="blanco">Definir persona1 Como Persona
-                <br /> persona1.nombre = "Juan"<br /> persona.edad <- 30
+              <button class="copiarContenido" data-target="codigo13">
+                <img src="imgen/copiar.png" alt="copiar" id="imagenCopiar" />
+              </button>
+              <code class="blanco" id="codigo13"
+                >Definir persona1 Como Persona <br />
+                persona1.nombre = "Juan"<br />
+                persona.edad = 30
               </code>
-          </div>
-          <p>En este ejemplo, se crea un objeto llamado "persona" de la clase "Persona" y se le asignan valores a sus atributos "nombre" y "edad".</p>
-          <p>Los métodos son las acciones que pueden realizar los objetos. Por ejemplo, en la clase "Persona", se podría crear un método para imprimir los datos de la persona:</p>
-          <div class="codigo">
-            <code class="blanco">Clase Persona
-              Definir nombre Como Caracter
-              Definir edad Como Entero
-          
-              Metodo ImprimirDatos()
-                  Escribir "Nombre: ", nombre
-                  Escribir "Edad: ", edad
-              Fin Metodo
-          Fin Clase
-            </code>
-        </div>
-          <p>Luego, para llamar al método "ImprimirDatos" del objeto "persona", se puede hacer lo siguiente:</p>
-          <div class="codigo">
-            <code class="blanco">persona1.ImprimirDatos()
-            </code>
-          </div>
-          <p>la programación orientada a objetos es una forma de abordar la programación que se enfoca en la creación de objetos que interactúan entre sí para resolver un problema. En PseInt, se pueden crear clases y objetos utilizando la sintaxis de programación orientada a objetos, y se pueden definir atributos y métodos para los objetos.</p>
-          <div class="boton">
-            <a class="btn1" href="arrefuncions.html" id="btn2">atras</a>
-            <a class="btn1" href="ejercicios.html">Continuar</a>
+            </div>
+            <p>
+              En este ejemplo, se crea un objeto llamado "persona" de la clase
+              "Persona" y se le asignan valores a sus atributos "nombre" y
+              "edad".
+            </p>
+            <p>
+              Los métodos son las acciones que pueden realizar los objetos. Por
+              ejemplo, en la clase "Persona", se podría crear un método para
+              imprimir los datos de la persona:
+            </p>
+            <div class="codigo">
+              <button class="copiarContenido" data-target="codigo14">
+                <img src="imgen/copiar.png" alt="copiar" id="imagenCopiar" />
+              </button>
+              <code class="blanco" id="codigo14"
+                >Clase Persona Definir nombre Como Caracter Definir edad Como
+                Entero Metodo ImprimirDatos() Escribir "Nombre: ", nombre
+                Escribir "Edad: ", edad Fin Metodo Fin Clase
+              </code>
+            </div>
+            <p>
+              Luego, para llamar al método "ImprimirDatos" del objeto "persona",
+              se puede hacer lo siguiente:
+            </p>
+            <div class="codigo">
+              <button class="copiarContenido" data-target="codigo15">
+                <img src="imgen/copiar.png" alt="copiar" id="imagenCopiar" />
+              </button>
+              <code class="blanco" id="codigo15">persona1.ImprimirDatos() </code>
+            </div>
+            <p>
+              la programación orientada a objetos es una forma de abordar la
+              programación que se enfoca en la creación de objetos que
+              interactúan entre sí para resolver un problema. En PseInt, se
+              pueden crear clases y objetos utilizando la sintaxis de
+              programación orientada a objetos, y se pueden definir atributos y
+              métodos para los objetos.
+            </p>
+            <div class="boton">
+              <a class="btn1" href="arrefuncions.html" id="btn2">atras</a>
+              <a class="btn1" href="ejercicios.html">Continuar</a>
+            </div>
           </div>
         </div>
       </div>
@@ -168,13 +229,17 @@
         <h3 class="h4">Buscame en mis redes sociales</h3>
         <br />
         <nav class="navegacion2">
-          <a href="https://www.youtube.com/channel/UCLfXqp_un5veLmhMk4MN0BA" target="_blank"
+          <a
+            href="https://www.youtube.com/channel/UCLfXqp_un5veLmhMk4MN0BA"
+            target="_blank"
             ><i class="fuente bi bi-youtube"></i
           ></a>
           <a href="https://www.instagram.com/alber70rres/" target="_blank"
             ><i class="fuente bi bi-instagram"></i
           ></a>
-          <a href="https://www.facebook.com/profile.php?id=61555589141489" target="_blank"
+          <a
+            href="https://www.facebook.com/profile.php?id=61555589141489"
+            target="_blank"
             ><i class="fuente bi bi-facebook"></i
           ></a>
           <a href="https://twitter.com/Alber70rres" target="_blank">
@@ -183,10 +248,11 @@
           <a href="https://github.com/Alber70rres" target="_blank">
             <i class="fuente bi bi-github"></i>
           </a>
-          <a href="https://www.linkedin.com/in/alberto-torres-882438298/" target="_blank">
-            <i
-              class="fa fa-linkedin-square"
-            ></i>
+          <a
+            href="https://www.linkedin.com/in/alberto-torres-882438298/"
+            target="_blank"
+          >
+            <i class="fa fa-linkedin-square"></i>
           </a>
         </nav>
         <br />
@@ -204,5 +270,6 @@
     </footer>
     <script src="main.js"></script>
     <script src="colorEnlace.js"></script>
+    <script src="copiarPegar.js"></script>
   </body>
 </html>

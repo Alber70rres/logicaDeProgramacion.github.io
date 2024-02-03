@@ -1,7 +1,5 @@
 body {
   font-family: "Raleway", sans-serif;
-  overflow-y: auto;
-  overflow-x: hidden;
 }
 .contenedor {
   padding-right: calc(1.5rem * 0.5);
@@ -10,7 +8,7 @@ body {
   margin-left: auto;
   padding-top: 2rem;
 }
-a{
+a {
   text-decoration: none;
 }
 .navegacion {
@@ -19,6 +17,7 @@ a{
   width: 100%;
   display: flex;
   align-items: center;
+  z-index: 100;
 }
 .hamburguer {
   padding: 0.5em 0.5em 0.5em 1em;
@@ -155,38 +154,49 @@ a{
   margin-right: 1rem;
   text-decoration: none;
 }
-.codigo {
-  padding: 2rem;
-  background: #343d4d;
-  color: rgb(240, 240, 240);
-  overflow-x: auto;
-  width: 60%;
-  border-radius: 10px;
-}
 
-.btn1:hover{
+.btn1:hover {
   background: rgb(10, 10, 10);
-}
-.blanco {
-  white-space: pre !important;
 }
 #btn2 {
   margin-right: 1.5rem;
 }
 
-.subtitle a:hover{
+.subtitle a:hover {
   background-color: rgb(90, 90, 90);
   color: #ffa500;
 }
 
-a.links.active {
+.colorObserver,
+.page1 {
+  color: #ffa500 !important;
   background-color: rgb(39, 39, 39);
-  color: #ffa500;
 }
 
-.introducir{
-  color: #ffa500 !important; 
-  background-color: rgb(39, 39, 39);
+.codigo {
+  padding: -0px 1.5rem 1.5rem 1.5rem;
+  background: #343d4d;
+  color: rgb(240, 240, 240);
+  overflow-x: auto;
+  width: 60%;
+  border-radius: 10px;
+  white-space: pre-line;
+}
+
+.copiarContenido img {
+  height: 1.2rem;
+  width: auto;
+  padding: 0.3rem 0 0.2rem 0;
+}
+.copiarContenido {
+  display: flex;
+  position: relative;
+  left: 93%;
+  top: -7px;
+  z-index: 1;
+  cursor: pointer;
+  border-radius: 5px;
+  background: rgb(150, 150, 150);
 }
 
 @media (min-width: 900px) {
@@ -242,18 +252,17 @@ a.links.active {
     color: rgb(10, 10, 10);
   }
 }
+
 @media (min-width: 500px) {
   .ini img {
     display: block;
-    
   }
 
-  img{
+  img {
     width: 100%;
     height: auto;
     object-fit: cover;
   }
-
 
   .items-enlace a {
     margin-left: 2rem;

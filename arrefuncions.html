@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="logica de programacion con pseint, variables, funciones, bucles, estructuras.">
+    <meta
+      name="description"
+      content="logica de programacion con pseint, variables, funciones, bucles, estructuras."
+    />
     <title>Logica Programacion</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
@@ -70,16 +73,16 @@
         <div class="subtitle">
           <h3 class="h3">Contenido</h3>
           <br /><br />
-          <a href="index.html" class="links enlaceCambio" onclick="cambiarColor(this); return false;">introducción</a>
-          <a href="datos.html" class="links enlaceCambio"  onclick="cambiarColor(this); return false;">variables</a>
-          <a href="datos.html" class="links enlaceCambio"  onclick="cambiarColor(this); return false;">tipos de datos</a>
-          <a href="condiciones.html" class="links enlaceCambio"  onclick="cambiarColor(this); return false;">condiciones</a>
-          <a href="condiciones.html" class="links enlaceCambio" onclick="cambiarColor(this); return false;">bucles</a>
-          <a href="arrefuncions.html" class="links enlaceCambio"  onclick="cambiarColor(this); return false;">arreglos</a>
-          <a href="arrefuncions.html" class="links enlaceCambio"  onclick="cambiarColor(this); return false;">funciones</a>
-          <a href="excepoo.html" class="links enlaceCambio"  onclick="cambiarColor(this); return false;">manejo de excepciones</a>
-          <a href="excepoo.html" class="links enlaceCambio"  onclick="cambiarColor(this); return false;">programación OO</a>
-          <a href="ejercicios.html" class="links enlaceCambio" onclick="cambiarColor(this); return false;">Ejercios resueltos</a>
+          <a href="index.html">introducción</a>
+          <a href="datos.html">variables</a>
+          <a href="datos.html#tiposDatos">tipos de datos</a>
+          <a href="condiciones.html">condiciones</a>
+          <a href="condiciones.html#bucles">bucles</a>
+          <a href="arrefuncions.html" class="color">arreglos</a>
+          <a href="arrefuncions.html#funciones" class="color">funciones</a>
+          <a href="excepoo.html">manejo de excepciones</a>
+          <a href="excepoo.html#objetos">programación OO</a>
+          <a href="ejercicios.html">Ejercios resueltos</a>
         </div>
       </div>
     </div>
@@ -108,7 +111,10 @@
             arreglo. Aqui te dejo un ejemplo diferente para que analizes
           </p>
           <div class="codigo">
-            <code class="blanco"
+            <button class="copiarContenido" data-target="codigo9">
+              <img src="imgen/copiar.png" alt="copiar" id="imagenCopiar" />
+            </button>
+            <code class="blanco" id="codigo9"
               >Algoritmo ejemplo_arreglos <br />Dimension arreglo[5] Como Entero
               <br />Para i = 1 Hasta 5 Con Paso 1 Hacer <br />
               arreglo[i] = i <br />FinPara <br />Para i = 1 Hasta 5 Con Paso 1
@@ -116,7 +122,7 @@
               arreglo[i]) <br />FinPara <br />FinAlgoritmo</code
             >
           </div>
-          <p>
+          <p id="funciones">
             En este ejemplo, se declara un arreglo llamado ejemplo-arreglos que
             contiene 5 elementos de tipo entero. Luego, se utiliza un bucle Para
             para asignar valores a cada uno de los elementos del arreglo, que
@@ -138,22 +144,38 @@
             A continuación se muestra un ejemplo de función en PSeInt que recibe
             dos números como parámetros y devuelve el resultado de la suma:
           </p>
-          <div class="codigo">
-            <code class="blanco"
-              >Proceso EjemploFuncion Funcion Sumar(num1: Entero, num2: Entero) -> Entero <br>Definir resultado como Entero resultado <- num1 + num2
-              <br />Devolver resultado FinFuncion <br />Definir x, y, z como Entero x <- 3 y <- 5 z <- Sumar(x, y)
-              <br /> Escribir "La suma de ", x, " y ", y, " es ", z <br> FinProceso</code
-            >
-          </div>
-          <p>En este ejemplo, la función Sumar recibe dos parámetros de tipo Entero y devuelve otro
-             valor de tipo Entero que es el resultado de sumar los dos números. Luego, en el programa 
-             principal se definen las variables x, y y z como enteros y se les asignan los valores 3 y 5 respectivamente. Finalmente, se llama a la función Sumar pasando 
-            como parámetros los valores de x e y y se asigna el resultado a la variable z.
-          </p>
-          <p>Al ejecutar este programa se mostrará en pantalla el mensaje "La suma de 3 y 5 es 8", ya que la función Sumar devuelve el valor 8 al sumar 3 y 5.</p>
-          <div class="boton">
-            <a class="btn1" href="condiciones.html" id="btn2" onclick="cambiarColor(this); return false;">atras</a>
-            <a class="btn1" href="excepoo.html" onclick="cambiarColor(this); return false;">Continuar</a>
+          <div id="general">
+            <div class="codigo">
+              <button class="copiarContenido" data-target="codigo10">
+                <img src="imgen/copiar.png" alt="copiar" id="imagenCopiar" />
+              </button>
+              <code class="blanco" id="codigo10"
+                >Proceso EjemploFuncion Funcion Sumar(num1: Entero, num2:
+                Entero) -> Entero <br />Definir resultado como Entero resultado
+                <- num1 + num2 <br />Devolver resultado FinFuncion <br />Definir
+                x, y, z como Entero x <- 3 y <- 5 z <- Sumar(x, y) <br />
+                Escribir "La suma de ", x, " y ", y, " es ", z <br />
+                FinProceso</code
+              >
+            </div>
+            <p>
+              En este ejemplo, la función Sumar recibe dos parámetros de tipo
+              Entero y devuelve otro valor de tipo Entero que es el resultado de
+              sumar los dos números. Luego, en el programa principal se definen
+              las variables x, y y z como enteros y se les asignan los valores 3
+              y 5 respectivamente. Finalmente, se llama a la función Sumar
+              pasando como parámetros los valores de x e y y se asigna el
+              resultado a la variable z.
+            </p>
+            <p>
+              Al ejecutar este programa se mostrará en pantalla el mensaje "La
+              suma de 3 y 5 es 8", ya que la función Sumar devuelve el valor 8
+              al sumar 3 y 5.
+            </p>
+            <div class="boton">
+              <a class="btn1" href="condiciones.html" id="btn2">atras</a>
+              <a class="btn1" href="excepoo.html">Continuar</a>
+            </div>
           </div>
         </div>
       </div>
@@ -163,13 +185,17 @@
         <h3 class="h4">Buscame en mis redes sociales</h3>
         <br />
         <nav class="navegacion2">
-          <a href="https://www.youtube.com/channel/UCLfXqp_un5veLmhMk4MN0BA" target="_blank"
+          <a
+            href="https://www.youtube.com/channel/UCLfXqp_un5veLmhMk4MN0BA"
+            target="_blank"
             ><i class="fuente bi bi-youtube"></i
           ></a>
           <a href="https://www.instagram.com/alber70rres/" target="_blank"
             ><i class="fuente bi bi-instagram"></i
           ></a>
-          <a href="https://www.facebook.com/profile.php?id=61555589141489" target="_blank"
+          <a
+            href="https://www.facebook.com/profile.php?id=61555589141489"
+            target="_blank"
             ><i class="fuente bi bi-facebook"></i
           ></a>
           <a href="https://twitter.com/Alber70rres" target="_blank">
@@ -178,10 +204,11 @@
           <a href="https://github.com/Alber70rres" target="_blank">
             <i class="fuente bi bi-github"></i>
           </a>
-          <a href="https://www.linkedin.com/in/alberto-torres-882438298/" target="_blank">
-            <i
-              class="fa fa-linkedin-square"
-            ></i>
+          <a
+            href="https://www.linkedin.com/in/alberto-torres-882438298/"
+            target="_blank"
+          >
+            <i class="fa fa-linkedin-square"></i>
           </a>
         </nav>
         <br />
@@ -199,6 +226,6 @@
     </footer>
     <script src="main.js"></script>
     <script src="colorEnlace.js"></script>
+    <script src="copiarPegar.js"></script>
   </body>
 </html>
-

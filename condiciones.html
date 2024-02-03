@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="logica de programacion con pseint, variables, funciones, bucles, estructuras.">
+    <meta
+      name="description"
+      content="logica de programacion con pseint, variables, funciones, bucles, estructuras."
+    />
     <title>Logica Programacion</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
@@ -70,16 +73,16 @@
         <div class="subtitle">
           <h3 class="h3">Contenido</h3>
           <br /><br />
-          <a href="index.html" class="links enlaceCambio" onclick="cambiarColor(this); return false;">introducción</a>
-          <a href="datos.html" class="links enlaceCambio"  onclick="cambiarColor(this); return false;">variables</a>
-          <a href="datos.html" class="links enlaceCambio"  onclick="cambiarColor(this); return false;">tipos de datos</a>
-          <a href="condiciones.html" class="links enlaceCambio"  onclick="cambiarColor(this); return false;">condiciones</a>
-          <a href="condiciones.html" class="links enlaceCambio" onclick="cambiarColor(this); return false;">bucles</a>
-          <a href="arrefuncions.html" class="links enlaceCambio"  onclick="cambiarColor(this); return false;">arreglos</a>
-          <a href="arrefuncions.html" class="links enlaceCambio"  onclick="cambiarColor(this); return false;">funciones</a>
-          <a href="excepoo.html" class="links enlaceCambio"  onclick="cambiarColor(this); return false;">manejo de excepciones</a>
-          <a href="excepoo.html" class="links enlaceCambio"  onclick="cambiarColor(this); return false;">programación OO</a>
-          <a href="ejercicios.html" class="links enlaceCambio" onclick="cambiarColor(this); return false;">Ejercios resueltos</a>
+          <a href="index.html">introducción</a>
+          <a href="datos.html" class="">variables</a>
+          <a href="datos.html#tiposDatos">tipos de datos</a>
+          <a href="condiciones.html" class="color">condiciones</a>
+          <a href="condiciones.html#bucles" class="color">bucles</a>
+          <a href="arrefuncions.html">arreglos</a>
+          <a href="arrefuncions.html#funciones">funciones</a>
+          <a href="excepoo.html">manejo de excepciones</a>
+          <a href="excepoo.html#objetos">programación OO</a>
+          <a href="ejercicios.html">Ejercios resueltos</a>
         </div>
       </div>
     </div>
@@ -104,15 +107,18 @@
             codigo.
           </p>
           <div class="codigo">
-            <code class="blanco"
+            <button class="copiarContenido" data-target="codigo5">
+              <img src="imgen/copiar.png" alt="copiar" id="imagenCopiar" />
+            </button>
+            <code class="blanco" id="codigo5"
               >Algoritmo ejemplo_si_sino <br />Definir numero Como Entero
-              <br />Escribir "Introduce un número:" <br />Leer numero <br />Si numero > 0 Entonces 
-              <br />Escribir "El número es positivo"
+              <br />Escribir "Introduce un número:" <br />Leer numero <br />Si
+              numero > 0 Entonces <br />Escribir "El número es positivo"
               <br />Sino <br />Escribir "El número es negativo" <br />FinSi
               <br />FinAlgoritmo
             </code>
           </div>
-          <p>
+          <p id="bucles">
             En este caso, si el número introducido por el usuario es mayor que
             cero, se mostrará el mensaje "El número es positivo", de lo
             contrario se mostrará "El número es negativo". Los condicionales son
@@ -120,7 +126,7 @@
             soluciones más complejas y adaptativas a diferentes situaciones.
           </p>
           <div class="titulo">
-            <h2>bucles</h2>
+            <h2 id=>bucles</h2>
           </div>
           <p>
             los bucles al igual que las condiciones son fundamentales en la
@@ -133,28 +139,55 @@
             variable de control que va incrementando su valor en cada iteración.
             Por ejemplo:
           </p>
-          <div class="codigo">
-            <code class="blanco"
-              >para i <- 1 hasta 10 con paso 1 hacer <br />escribir(i) <br />finpara
-            </code>
-          </div>
-          <p>Este código escribirá los números del 1 al 10. <br><br>
-            El bucle mientras se utiliza cuando no se conoce el número de veces que se debe repetir
-             un conjunto de instrucciones. La repetición continúa mientras se cumpla una determinada
-              condición. Por ejemplo:</p>
-              <div class="codigo">
-                <code class="blanco">mientras x < 10 hacer<br> x <- x + 1 <br>finmientras</code>
-              </div>
-              <p>Este código incrementará el valor de x hasta que sea igual o mayor a 10. <br><br>
-                El bucle hacer mientras es similar al bucle mientras, pero se ejecuta al
-                 menos una vez antes de comprobar la condición. Por ejemplo:</p>
-                 <div class="codigo">
-                  <code class="blanco"> hacer <br>escribir("Ingrese una opción:") <br>  leer(opcion) <br>mientras opcion <> 0</code>
-                </div>
-                <p>Este código seguirá pidiendo al usuario que ingrese una opción hasta que la opción ingresada sea 0.</p>
+          <div id="general">
+            <div class="codigo">
+              <button class="copiarContenido" data-target="codigo6">
+                <img src="imgen/copiar.png" alt="copiar" id="imagenCopiar" />
+              </button>
+              <code class="blanco" id="codigo6"
+                >para i = 1 hasta 10 con paso 1 hacer <br />escribir(i)
+                <br />finpara
+              </code>
+            </div>
+            <p>
+              Este código escribirá los números del 1 al 10. <br /><br />
+              El bucle mientras se utiliza cuando no se conoce el número de veces
+              que se debe repetir un conjunto de instrucciones. La repetición
+              continúa mientras se cumpla una determinada condición. Por ejemplo:
+            </p>
+            <div class="codigo">
+              <button class="copiarContenido" data-target="codigo7">
+                <img src="imgen/copiar.png" alt="copiar" id="imagenCopiar" />
+              </button>
+              <code class="blanco" id="codigo7"
+                >mientras x = 10 hacer<br />
+                x = x + 1 <br />finmientras</code
+              >
+            </div>
+            <p>
+              Este código incrementará el valor de x hasta que sea igual o mayor a
+              10. <br /><br />
+              El bucle hacer mientras es similar al bucle mientras, pero se
+              ejecuta al menos una vez antes de comprobar la condición. Por
+              ejemplo:
+            </p>
+            <div class="codigo">
+              <button class="copiarContenido" data-target="codigo8">
+                <img src="imgen/copiar.png" alt="copiar" id="imagenCopiar" />
+              </button>
+              <code class="blanco" id="codigo8">
+                hacer <br />escribir("Ingrese una opción:") <br />
+                leer(opcion) <br />mientras opcion <> 0</code
+              >
+            </div>
+            <p>
+              Este código seguirá pidiendo al usuario que ingrese una opción hasta
+              que la opción ingresada sea 0.
+            </p>
             <div class="boton">
-              <a class="btn1" href="datos.html" id="btn2" onclick="cambiarColor(this); return false;">atras</a>
-            <a class="btn1 tres" href="arrefuncions.html">Continuar</a>
+              <a class="btn1" href="datos.html" id="btn2">atras</a>
+              <a class="btn1 tres" href="arrefuncions.html">Continuar</a>
+            </div>
           </div>
         </div>
       </div>
@@ -164,13 +197,17 @@
         <h3 class="h4">Buscame en mis redes sociales</h3>
         <br />
         <nav class="navegacion2">
-          <a href="https://www.youtube.com/channel/UCLfXqp_un5veLmhMk4MN0BA" target="_blank"
+          <a
+            href="https://www.youtube.com/channel/UCLfXqp_un5veLmhMk4MN0BA"
+            target="_blank"
             ><i class="fuente bi bi-youtube"></i
           ></a>
           <a href="https://www.instagram.com/alber70rres/" target="_blank"
             ><i class="fuente bi bi-instagram"></i
           ></a>
-          <a href="https://www.facebook.com/profile.php?id=61555589141489" target="_blank"
+          <a
+            href="https://www.facebook.com/profile.php?id=61555589141489"
+            target="_blank"
             ><i class="fuente bi bi-facebook"></i
           ></a>
           <a href="https://twitter.com/Alber70rres" target="_blank">
@@ -179,10 +216,11 @@
           <a href="https://github.com/Alber70rres" target="_blank">
             <i class="fuente bi bi-github"></i>
           </a>
-          <a href="https://www.linkedin.com/in/alberto-torres-882438298/" target="_blank">
-            <i
-              class="fa fa-linkedin-square"
-            ></i>
+          <a
+            href="https://www.linkedin.com/in/alberto-torres-882438298/"
+            target="_blank"
+          >
+            <i class="fa fa-linkedin-square"></i>
           </a>
         </nav>
         <br />
@@ -200,5 +238,6 @@
     </footer>
     <script src="main.js"></script>
     <script src="colorEnlace.js"></script>
+    <script src="copiarPegar.js"></script>
   </body>
 </html>
